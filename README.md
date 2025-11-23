@@ -6,9 +6,9 @@
 Motivated by the need for speed and precision in data entry, this app challenges users to **locate a target number (1-30) hidden across 10 pages**.
 The objective is to find the correct number and transition to the next page as quickly as possible.
 
-## 💻 Input Modes
+## 💻 Navigation Methods
 
-The application supports three distinct methods for navigation:
+The application supports three distinct methods to navigate through pages:
 1.  **Mouse Scrolling**
 2.  **Keyboard Arrows** (Left/Right Keys)
 3.  **On-Screen Button Clicks**
