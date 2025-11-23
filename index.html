@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Game</title>
+    <link rel="icon" type="image/svg" href="keyboard.svg">
+    <link  rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <div id="container">
+        
+        <div id="game-info">
+        <h3>Scrolling Game</h3>
+        <p style="margin-top: 10%;">• Find the <b>10</b> correct numbers. Every millisecond counts!</p>
+        <p>• Clicking a number reshuffles the deck.</p>
+        <button class="button" onclick="startGame()">Play the Game</button>
+        </div>
+        
+
+        <div id="numbers-table">
+            <div id="stats">
+                <p>Score:<span id="score"></span>|Time:<span id="timer"></span></p>
+            </div>
+        <table>
+            <tr>
+                <td class="numbers" id="first-number"></td>
+                <td class="numbers" id="second-number"></td>
+                <td class="numbers" id="third-number"></td>
+            </tr>
+        </table>
+        <p id="book">Page:<span id="page"></span>_Number:<span id="number" style="color: #000000; font-weight: bold; font-size:min(6vh, 6vw); text-shadow: #ffcc00 1px 0 10px"></span></p>
+        <button onclick="previousPage()">←</button>
+        <button onclick="nextPage()">→</button>
+        </div>
+
+        <div id="result-container">
+                <p>Final Time: <span id="result"></span></p>
+                <button class="button" onclick="restartGame()">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
